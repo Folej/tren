@@ -1,0 +1,15 @@
+C:\Users\kildi\Documents\code_ege\tren\tren\bin\Debug\net6.0\tren.exe
+C:\Users\kildi\Documents\code_ege\tren\tren\bin\Debug\net6.0\tren.deps.json
+C:\Users\kildi\Documents\code_ege\tren\tren\bin\Debug\net6.0\tren.runtimeconfig.json
+C:\Users\kildi\Documents\code_ege\tren\tren\bin\Debug\net6.0\tren.dll
+C:\Users\kildi\Documents\code_ege\tren\tren\bin\Debug\net6.0\ref\tren.dll
+C:\Users\kildi\Documents\code_ege\tren\tren\bin\Debug\net6.0\tren.pdb
+C:\Users\kildi\Documents\code_ege\tren\tren\obj\Debug\net6.0\tren.csproj.AssemblyReference.cache
+C:\Users\kildi\Documents\code_ege\tren\tren\obj\Debug\net6.0\tren.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kildi\Documents\code_ege\tren\tren\obj\Debug\net6.0\tren.AssemblyInfoInputs.cache
+C:\Users\kildi\Documents\code_ege\tren\tren\obj\Debug\net6.0\tren.AssemblyInfo.cs
+C:\Users\kildi\Documents\code_ege\tren\tren\obj\Debug\net6.0\tren.csproj.CoreCompileInputs.cache
+C:\Users\kildi\Documents\code_ege\tren\tren\obj\Debug\net6.0\tren.dll
+C:\Users\kildi\Documents\code_ege\tren\tren\obj\Debug\net6.0\ref\tren.dll
+C:\Users\kildi\Documents\code_ege\tren\tren\obj\Debug\net6.0\tren.pdb
+C:\Users\kildi\Documents\code_ege\tren\tren\obj\Debug\net6.0\tren.genruntimeconfig.cache
