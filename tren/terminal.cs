@@ -17,42 +17,55 @@ namespace TerminalProgramm
                 Console.WriteLine("Terminal OCRO DataBase: ");
                 string OneCase = Console.ReadLine();
 
-                if (OneCase == "create new DB")
+                switch(OneCase.ToLower())
                 {
-                    Console.WriteLine("enter the name of new the database");
-                    string NameDB = Console.ReadLine();
+                    case "create new":                    
+                        Console.WriteLine("enter the name of new the database");
+                        string NameDB = Console.ReadLine();
 
-                    Console.WriteLine("enter the path");
-                    string PathDB = Console.ReadLine();
+                        Console.WriteLine("enter the path");
+                        string PathDir = Console.ReadLine();
 
-                    Console.WriteLine("create a given directory (Yes or No) ?");
-                    string otv = Console.ReadLine();
+                        Console.WriteLine("create a given directory (Yes or No) ?");
+                        string otv = Console.ReadLine();
 
-                    if (otv == "Yes" || otv == "yes" || otv == "y" || otv == "Y")
-                    {
-                        Directory.CreateDirectory(PathDB);
-                    }
+                        if (otv == "Yes" || otv == "yes" || otv == "y" || otv == "Y")
+                        {
+                            bool exist = Directory.Exists(PathDir);
 
-                    else
-                    {
-                        Console.WriteLine("cancellation");
-                    }
-                }
+                            if (!exist)
+                            {
+                                Console.WriteLine(PathDir + " does not exist.");
+                                Console.WriteLine("Create directory: " + PathDir);
 
-                else if (OneCase == "--help")
-                {
-                    Console.WriteLine("");
-                }
+                                Directory.CreateDirectory(PathDir);
+                            }
 
-                else if (OneCase == "--info")
-                {
-                    Console.WriteLine("version -- 0.0.0 (beta)");
-                    Console.WriteLine("date launch -- " + date);
-                }
+                            else
+                            {
+                                Console.WriteLine("error: this directive already exists!");
+                            }
+                        }
+                        
+                        else
+                        {
+                            Console.WriteLine("cancellation");
+                        }
+                    break;
 
-                else
-                {
-                    Console.WriteLine("error: is not an internal command!");
+                    case "--help":                    
+                        Console.WriteLine("");
+                    break;
+
+                    case "--info":                    
+                        Console.WriteLine("version -- 0.0.0 (beta)");
+                        Console.WriteLine("date launch -- " + date);
+                    break;
+
+                    case "/exit":
+                    
+                        Environment.Exit(0);
+                    break;
                 }
             }
         }
