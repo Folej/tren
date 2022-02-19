@@ -25,7 +25,18 @@ namespace TerminalProgramm
                     Console.WriteLine("enter the path");
                     string PathDB = Console.ReadLine();
 
-                    
+                    Console.WriteLine("create a given directory (Yes or No) ?");
+                    string otv = Console.ReadLine();
+
+                    if (otv == "Yes" || otv == "yes" || otv == "y" || otv == "Y")
+                    {
+                        Directory.CreateDirectory(PathDB);
+                    }
+
+                    else
+                    {
+                        Console.WriteLine("cancellation");
+                    }
                 }
 
                 else if (OneCase == "--help")
