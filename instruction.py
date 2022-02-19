@@ -14,7 +14,7 @@ while Start:
     elif OneCase == "--help":
         print("\n--info === information about the program")
         print("\n/exite === close programm")
-    
+
     else:
         print("\nerror: --", OneCase, "-- is not an internal command!")
     
